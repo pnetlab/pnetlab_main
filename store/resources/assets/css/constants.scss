@@ -1,0 +1,23 @@
+$font_family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font_color: #333; 
+$font_size: 12px;
+$font_size_lg: 14px;
+$primary_color: #0d274d;
+$dark_color: #0d274d;
+$light_color: #0d274d;
+
+$menu_top: 60px;
+$menu_left: 0px;
+$menu_color: #333;
+
+:export {
+  font_family: $font_family;
+  font_size: $font_size;
+  font_color: $font_color;
+  primary_color: $primary_color;
+  dark_color: $dark_color;
+  light_color: $light_color;
+  menu_top: $menu_top;
+  menu_left: $menu_left;
+  
+}

@@ -1,0 +1,17 @@
+<?php
+// TEMPLATE MODE .missing or .hided
+DEFINE('TEMPLATE_DISABLED','.hided') ;
+
+
+/*   Define custom templates:
+ *
+ *   Create for exemple /opt/unetlab/html/templates/mytemplate.yaml and Create /opt/unetlab/html/templates/othertemplate.yaml
+ *   Then uncomment lines below
+ */
+
+//   $custom_templates =  Array(
+//        'mytemplate' => 'My Custom Template1',
+//        'othertemplate' => 'An Other Template'
+//   );
+
+?>

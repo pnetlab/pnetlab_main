@@ -1,0 +1,9 @@
+[Unit]
+Description=Check database
+After=mysql.service
+
+[Service]
+ExecStart=/usr/bin/php /opt/unetlab/html/store/artisan mysql_recovery run
+RemainAfterExit=false
+[Install]
+WantedBy=multi-user.target

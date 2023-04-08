@@ -1,0 +1,19 @@
+<?php
+define('LABS_TABLE', 'labs');
+define('LAB_ID', 'lab_id');
+define('LAB_NAME', 'lab_name');
+define('LAB_DES', 'lab_des');
+define('LAB_IMG', 'lab_img');
+define('LAB_PRICE', 'lab_price');
+define('LAB_UID', 'lab_uid');
+define('LAB_UNAME', 'lab_uname');
+define('LAB_STATUS', 'lab_status');
+define('LAB_STATUS_ADMIN', 'lab_status_admin');
+define('LAB_STATUS_VERSION', 'lab_status_version');
+define('LAB_ARTICLE', 'lab_article');
+define('LAB_TIME', 'lab_time');
+define('LAB_UNIT', 'lab_unit');
+define('LAB_WEIGHT', 'lab_weight');
+define('LAB_SUBJECT', 'lab_subject');
+define('LAB_UPDATE', 'lab_update');
+define('LAB_LAST_VERSION', 'lab_last_version');

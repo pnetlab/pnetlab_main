@@ -1,0 +1,29 @@
+{
+  "labs": "Labs",
+  "lab_id": "Id",
+  "lab_name": "Name",
+  "lab_name_des": "Name of the lab on store",
+  "lab_des": "Description",
+  "lab_img": "Image",
+  "lab_price": "Price",
+  "lab_uid": "Uid",
+  "lab_uname": "User Name",
+  "lab_status": "Status",
+  "lab_status_admin": "Status Admin",
+  "lab_status_version": "Status Version",
+  "lab_article": "Article",
+  "lab_time": "Time",
+  "lab_unit": "Unit",
+  "lab_weight": "Weight",
+  "lab_subject": "Subject",
+  "lab_subject_des": "Selecting topics for lab will help users easily find your Lab",
+  "lab_update": "Update",
+  "lab_last_version": "Last Version",
+  "lab_open_des": "When you choose \"Open your Lab\". Your Lab will be published without encryption. Users will have full permission to use your lab as they wish. (Could be used in Offline Mode)",
+  "lab_price_des": "Money your user have to pay in dollar",
+  "lab_unit_des": "Life time of the lab is calculated from the date of purchase in days. If your lab is unlimit set 0",
+  "lab_des_des": "Short description",
+  "lab_article_des": "Write something to pro your lab. This article will be published on the store"
+
+
+}

@@ -1,0 +1,9 @@
+[Unit]
+Description=Enable PNET NAT card
+After=network.target
+
+[Service]
+ExecStart=/opt/unetlab/html/store/app/Console/Commands/pnetnat
+RemainAfterExit=yes
+[Install]
+WantedBy=multi-user.target

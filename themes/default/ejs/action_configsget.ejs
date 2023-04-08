@@ -1,0 +1,49 @@
+<div class="row row-config-list">
+    <div class="config-list col-md-3 col-lg-2 col-sm-3" style="overflow-x: hidden !important;padding-right: 0; margin-right: 0">
+        
+        <ul style="margin-right: 0;">
+            <li class="box_flex" style="border-bottom: solid thin #ccc; padding: 5px;">
+                <%=lang('Change All') %>
+                <label style="margin: auto 0px auto auto"  class="checkbox-switch"
+                        data-toggle="tooltip"
+                        data-placement="bottom"
+                        title="Enable/Disable boot from exported">
+                    <input type="checkbox" id="checkbox-slider-master">
+                    <div class="checkbox-slider-off"></div>
+                </label>
+            </li>
+            
+            <% $.each(configs, function (key, config) { %>
+            <li>
+                <a class="action-configget"
+                data-path="<%=key%>"
+                href="javascript:void(0)"
+                title="<%=(config['config'] == 0 ? MESSAGES[122] : MESSAGES[121]) %>">
+                <img src="/images/icons/<%=config['icon']%>"
+                width="15" height="15" style="margin-bottom: 1px">
+                &nbsp;&nbsp;&nbsp;
+                <%=config['name']%>
+                </a>
+                <span class="absolute-right">
+                    <span class="align-flash">
+                        <%= config['config'] == 1 ? '<i class="glyphicon glyphicon-flash tg-flash"></i>' : '&nbsp;&nbsp;&nbsp;'%>
+                    </span>
+                    <label class="checkbox-switch"
+                           data-toggle="tooltip"
+                           data-placement="bottom"
+                           title="<%=config['config'] == 0 ? 'Enable' : 'Disable'%> boot from exported">
+                        <input type="checkbox"
+                        class="change_config_status"
+                        data-path="<%=key%>"
+                        data-name="<%=config['name']%>"
+                        <%=config['config'] == 1 ? 'checked' : ''%>>
+                        <div class="checkbox-slider-<%=config['config'] == 1 ? 'on' : 'off'%>"></div>
+                    </label>
+                </span>
+                <div class="clearfix"></div><hr style="margin-bottom: 0;margin-top:3px"></li>
+            <% }); %>
+        </ul>
+    </div>
+    <div id="config-data" class="col-md-9 col-lg-10 col-sm-9">
+    </div>
+</div>

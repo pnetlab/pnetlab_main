@@ -1,0 +1,14 @@
+#!/bin/bash
+checkpnetnat=$(ip link | grep pnet_nat)
+if [[ "$checkpnetnat" = "" ]]; then
+    brctl addbr pnet_nat;
+fi
+ip link set dev pnet_nat up
+ip addr add 10.0.137.1/24 dev pnet_nat > /dev/null 2>&1
+pkill dnsmasq
+dnsmasq --interface=pnet_nat --dhcp-range=10.0.137.10,10.0.137.254,255.255.255.0 --dhcp-option=3,10.0.137.1 &
+iptables -t nat -D POSTROUTING -o pnet0 -s 10.0.137.1/24 -j MASQUERADE > /dev/null 2>&1
+iptables -t nat -A POSTROUTING -o pnet0 -s 10.0.137.1/24 -j MASQUERADE
+
+ntpdate -u ntp.ubuntu.com
+

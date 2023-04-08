@@ -1,0 +1,15 @@
+{
+      "node_sessions": "Nodes Table",
+      "node_session_id": "Session ID",
+      "node_session_nid": "Node ID",
+      "node_session_lab": "Lab",
+      "node_session_port": "Port",
+      "node_session_type": "Type",
+      "node_session_workspace": "Folder",
+      "node_session_ram": "RAM (%)",
+      "node_session_cpu": "CPU (%)",
+      "node_session_hdd": "HDD (MB)",
+      "node_session_running": "Running",
+      "node_name": "Node Name",
+      "device_ram": "Device RAM"
+}

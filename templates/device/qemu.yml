@@ -1,0 +1,222 @@
+---
+image:
+  width: 8
+  wipe: 1
+
+name: Qemu
+
+description: Qemu Device
+
+icon: Server.png
+
+firstmac: 
+  value: ''
+  restart: 1
+  width: 6
+
+first_nic: 
+  value: ''
+  type: list
+  options:
+    '': 'Auto'
+    e1000 : e1000
+    e1000-82540em : e1000-82540em
+    e1000-82544gc : e1000-82544gc
+    e1000-82545em : e1000-82545em
+    i82550 : i82550
+    i82551 : i82551
+    i82557a : i82557a
+    i82557b : i82557b
+    i82557c : i82557c
+    i82558a : i82558a
+    i82558b : i82558b
+    i82559a : i82559a
+    i82559b : i82559b
+    i82559c : i82559c
+    i82559er : i82559er
+    i82562 : i82562
+    i82801 : i82801
+    ne2k_isa : ne2k_isa
+    ne2k_pci : ne2k_pci
+    pcnet : pcnet
+    rtl8139 : rtl8139
+    usb-bt-dongle : usb-bt-dongle
+    usb-net : usb-net
+    virtio-net-device : virtio-net-device
+    virtio-net-pci : virtio-net-pci
+    vmxnet3 : vmxnet3
+  width: 6
+  restart: 1
+
+uuid: 
+  value: ''
+  restart: 1
+
+cpulimit: 
+  type: checkbox
+  value: 1
+  width: 12
+  restart: 1
+
+cpu: 
+  type: number
+  value: 1
+  width: 6
+  restart: 1
+
+ram: 
+  type: number
+  value: 512
+  unit: (MB)
+  width: 6
+  restart: 1
+
+console: 
+  type: list
+  options:
+    telnet: Telnet
+    rdp: RDP
+    vnc: VNC
+    winbox: WinBox
+    ssh: SSH
+    http: HTTP
+    https: HTTPS
+  value: telnet
+  restart: 1
+  width: 6
+
+map_port: 
+  type: number
+  restart: 1
+  width: 6
+
+console_2nd: 
+  type: list
+  value: ''
+  options:
+    '': 'Empty'
+    telnet: Telnet
+    rdp: RDP
+    vnc: VNC
+    winbox: WinBox
+    ssh: SSH
+    http: HTTP
+    https: HTTPS
+  restart: 1
+  width: 6
+
+map_port_2nd: 
+  type: number
+  restart: 1
+  width: 6
+
+username: 
+  width: 6
+
+password: 
+  width: 6,
+  type: password
+
+
+ethernet: 
+  type: number
+  value: 4
+  width: 12
+  restart: 1
+  
+qemu_arch: 
+  value: i386
+  type: list
+  options:
+    "": "Empty" 
+    i386: i386
+    x86_64: x86_64
+  width: 4
+  restart: 1
+
+qemu_nic: 
+  value: e1000
+  type: list
+  options:
+    e1000 : e1000
+    e1000-82540em : e1000-82540em
+    e1000-82544gc : e1000-82544gc
+    e1000-82545em : e1000-82545em
+    i82550 : i82550
+    i82551 : i82551
+    i82557a : i82557a
+    i82557b : i82557b
+    i82557c : i82557c
+    i82558a : i82558a
+    i82558b : i82558b
+    i82559a : i82559a
+    i82559b : i82559b
+    i82559c : i82559c
+    i82559er : i82559er
+    i82562 : i82562
+    i82801 : i82801
+    ne2k_isa : ne2k_isa
+    ne2k_pci : ne2k_pci
+    pcnet : pcnet
+    rtl8139 : rtl8139
+    usb-bt-dongle : usb-bt-dongle
+    usb-net : usb-net
+    virtio-net-device : virtio-net-device
+    virtio-net-pci : virtio-net-pci
+    vmxnet3 : vmxnet3
+  width: 4
+  restart: 1
+
+qemu_version:
+  width: 4
+  restart: 1
+
+
+
+qemu_options: 
+  value: -machine type=pc-1.0,accel=tcg -serial mon:stdio -nographic -nodefconfig
+    -nodefaults -rtc base=utc -smbios type=1,product=asa5520 -icount 1
+  restart: 1
+
+config_script: 
+  value: ''
+  width: 6
+  restart: 1
+
+script_timeout: 
+  type: number
+  value: 1200
+  width: 6
+  restart: 1
+
+config: 
+  type: list
+  value: 0
+  options:
+    0: None
+    1: Exported
+  wipe: 1
+
+delay: 
+  value: 0
+  type: number
+  restart: 1
+
+size:
+  type: number
+  width: 4
+  unit: (px)
+
+left: 
+  type: number
+  width: 4
+  unit: (px)
+
+top:
+  type: number
+  width: 4
+  unit: (px)
+
+eth_name: 
+  show: 0
+...

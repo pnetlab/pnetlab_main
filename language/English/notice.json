@@ -1,0 +1,16 @@
+{
+  "notice" : "Notice",
+  "notice_id" : "Id",
+  "notice_time" : "Time",
+  "notice_uid" : "Uid",
+  "notice_uname" : "Uname",
+  "notice_fire_uid" : "Fire Uid",
+  "notice_fire_uname" : "Fire Uname",
+  "notice_content" : "Content",
+  "notice_variable" : "Variable",
+  "notice_seen" : "Seen",
+  "notice_level" : "Level",
+  "notice_action" : "Action",
+  "Mark as read": "Mark as read",
+  "Read more": "Read more"
+}

@@ -1,0 +1,23 @@
+#!/bin/bash
+last_update=0;
+reload_sass() {
+	pkill -f node-sass
+	node-sass  -r resources/views -o public/assets
+	node-sass  -rw resources/views -o public/assets &
+}
+
+pkill -f "inotifywait -mr -e create -e moved_to"
+inotifywait -mr -e create -e moved_to ./resources/views --format '%T %f' --timefmt '%s' | while read tm file; do 
+	if [[ $file =~ .*scss$ ]]; then
+		pkill -f node-sass
+		last_update=$(( $last_update+1 ));
+		if [ "$tm" -ge "$last_update" ]
+		then 
+			last_update=$(date +%s)
+			sleep 1;
+			reload_sass
+		fi
+	fi
+done
+
+

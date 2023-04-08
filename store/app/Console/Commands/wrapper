@@ -1,0 +1,13 @@
+<?php
+
+$gid =  $argv[1];
+$uid =  $argv[2];
+$cmd = $argv[3];
+
+posix_setsid();
+
+if($gid > 0) posix_setgid($gid);
+
+if($uid > 0) posix_setuid($uid);
+
+if($cmd != '') return shell_exec($cmd);

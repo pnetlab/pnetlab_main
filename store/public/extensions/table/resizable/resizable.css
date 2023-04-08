@@ -1,0 +1,21 @@
+.table-resizable.resizing, .table-resizable th::before {
+    cursor: col-resize;
+    user-select: none;
+  }
+  .table-resizable th {
+    position: relative;
+  }
+  .table-resizable th::before {
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1em;
+  }
+  .table-resizable th:last-of-type::before {
+    display: none;
+  }
+  
+  

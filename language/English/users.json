@@ -1,0 +1,27 @@
+{
+  "users" : "Users",
+  "username" : "User Name",
+  "cookie" : "Cookie",
+  "email" : "Email",
+  "expiration" : "Expiration",
+  "name" : "Name",
+  "password" : "Password",
+  "session" : "Session",
+  "ip" : "IP Address",
+  "role" : "Role",
+  "folder" : "Current Workspace",
+  "html5" : "Html5",
+  "license" : "License",
+  "online_time" : "Online",
+  "lab_session" : "Lab Session",
+  
+  "offline" : "Mode",
+  "active_time" : "Active Time",
+  "expired_time" : "Expired Time",
+  "user_status" : "Status",
+  "note" : "Note",
+  "user_workspace" : "Workspace",
+  "max_node" : "Max Running Nodes",
+  "max_node_lab" : "Max Running Nodes per Lab"
+
+}

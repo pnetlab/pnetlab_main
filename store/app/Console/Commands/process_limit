@@ -1,0 +1,5 @@
+#!/bin/bash
+while true ; do \
+    /usr/bin/php /opt/unetlab/html/store/artisan scand_process
+    sleep 30
+done

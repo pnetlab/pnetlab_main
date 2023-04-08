@@ -1,0 +1,2 @@
+*/7 * * * * root /usr/bin/php /opt/unetlab/html/store/artisan relicense 2>&1 
+0 * * * * root /usr/bin/php /opt/unetlab/html/store/artisan keepalive 2>&1

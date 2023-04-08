@@ -1,0 +1,12 @@
+#!/bin/bash
+while true ; do \
+    harddisk=$(df -k /);
+    if [[ "$harddisk" =~ ([0-9]+)%[[:space:]]*/$ ]]; 
+    then 
+        if [[ ${BASH_REMATCH[1]} -gt 90 ]];
+        then
+            echo -e "\nHard drive current is ${BASH_REMATCH[1]}%. Please add another hard drive and reboot (Do not expand)" >> /dev/tty0
+        fi
+    fi
+    sleep 90
+done

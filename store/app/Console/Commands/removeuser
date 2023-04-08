@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo deluser pnetlab 2&>1 /dev/null

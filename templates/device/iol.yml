@@ -1,0 +1,74 @@
+---
+image: 
+  width: 8
+  wipe: 1
+
+name: R
+icon: Router.png
+description: Cisco IOL
+
+nvram: 
+  type: number
+  value: 1024
+  unit: (KB)
+  width: 6
+  restart: 1
+
+ram: 
+  type: number
+  value: 1024
+  unit: (MB)
+  width: 6
+  restart: 1
+
+ethernet: 
+  type: number
+  value: 1
+  width: 6
+  restart: 1
+
+serial: 
+  type: number
+  value: 0
+  width: 6
+  restart: 1
+
+keepalive: 
+  type: checkbox
+  value: 0
+  width: 12
+  restart: 1
+
+size:
+  type: number
+  width: 4
+  unit: (px)
+
+left: 
+  type: number
+  width: 4
+  unit: (px)
+
+top:
+  type: number
+  width: 4
+  unit: (px)
+
+config_script: embedded
+config: 
+  type: list
+  value: 0
+  options:
+    0: None
+    1: Exported
+  wipe: 1
+
+iol_options: 
+  type: text
+  value: ''
+  restart: 1
+
+  
+
+  
+...

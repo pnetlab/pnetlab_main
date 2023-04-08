@@ -1,0 +1,30 @@
+---
+type: qemu
+name: NOKIA
+description: Nokia 16
+config_script: config_timos.py
+cpulimit: 1
+icon: Router.png
+cpu: 2
+ram: 4096
+ethernet: 8
+console: telnet
+qemu_arch: x86_64
+qemu_nic: virtio-net-pci
+qemu_options: -cpu host -machine type=pc-1.0,accel=kvm -serial mon:stdio -nographic -nodefconfig -nodefaults -rtc base=2019-07-20
+        -smbios type=1,product='TIMOS:license-file=cf3:/license.txt slot=A chassis=SR-c12 cfm-xp-b card=iom-xp mcm/1=mcm-xp mda/1=m10-1gb-xp-sfp'
+uuid: b810b91f-bd92-45bd-b0d1-b5b8ac40f099
+eth_name:
+- mgmt
+- internal
+- 1/1/1
+- 1/1/2
+- 1/1/3
+- 1/1/4
+- 1/1/5
+- 1/1/6
+- 1/1/7
+- 1/1/8
+- 1/1/9
+- 1/1/10
+...

@@ -1,0 +1,21 @@
+{
+  "user_permission" : "Permission",
+  "user_per_id" : "Per Id",
+  "user_per_role" : "Per Role",
+  "user_per_name" : "Per Name",
+
+  "DELETE_FOLDER": "Delete Folder",
+  "ADD_FOLDER": "Add New Folder",
+  "EDIT_FOLDER": "Rename or Move Folder",
+  "DELETE_LAB": "Delete Lab",
+  "ADD_LAB": "Add New Lab",
+  "IMPORT_LAB": "Import Lab",
+  "EXPORT_LAB": "Export Lab",
+  "MOVE_LAB": "Move Lab",
+  "CLONE_LAB": "Clone Lab",
+  "RENAME_LAB": "Rename Lab",
+
+  "JOIN_LAB": "Join Lab Session",
+  "OPEN_LAB": "Open New Lab Session"
+
+}

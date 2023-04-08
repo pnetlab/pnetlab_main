@@ -1,0 +1,9 @@
+[Unit]
+Description=Update Hard disk status
+After=mysql.service
+
+[Service]
+ExecStart=/opt/unetlab/html/store/app/Console/Commands/harddisk_limit
+RemainAfterExit=yes
+[Install]
+WantedBy=multi-user.target

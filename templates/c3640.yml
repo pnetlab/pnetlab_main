@@ -1,0 +1,49 @@
+
+---
+type: dynamips
+name: C3640
+config_script: embedded
+description: Cisco C3640 (Dynamips)
+icon: Router.png
+idlepc: "0x604b1edc"
+nvram: 128
+ram: 128
+
+slot1:
+    value: ""
+    type: list
+    options:
+        "": Empty
+        NM-1E: NM-1E
+        NM-4E: NM-4E
+        NM-1FE-TX: NM-1FE-TX 
+        NM-4T: NM-4T
+        NM-16ESW: NM-16ESW
+       
+slot2:
+    value: ""
+    type: list
+    options:
+        "": Empty
+        NM-1E: NM-1E
+        NM-4E: NM-4E
+        NM-1FE-TX: NM-1FE-TX 
+        NM-4T: NM-4T
+        NM-16ESW: NM-16ESW
+       
+        
+slot3:
+    value: ""
+    type: list
+    options:
+        "": Empty
+        NM-1E: NM-1E
+        NM-4E: NM-4E
+        NM-1FE-TX: NM-1FE-TX 
+        NM-4T: NM-4T
+        NM-16ESW: NM-16ESW
+       
+        
+       
+dynamips_options: -P 3600 -X
+...

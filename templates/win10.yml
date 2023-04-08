@@ -1,0 +1,17 @@
+# Copyright (c) PNETLab
+---
+type: qemu
+name: Win
+description: Windows
+cpulimit: 1
+icon: Desktop.png
+cpu: 4
+ram: 4096
+ethernet: 1
+console: vnc
+shutdown: 1
+qemu_arch: x86_64
+qemu_version: 4.1.0
+qemu_options: -machine type=pc,accel=kvm -cpu host,+fsgsbase -vga std -usbdevice
+  tablet -boot order=cd -drive file=/opt/qemu/share/qemu/virtio-win-drivers.img,index=1,if=floppy,readonly
+...

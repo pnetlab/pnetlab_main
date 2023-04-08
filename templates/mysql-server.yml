@@ -1,0 +1,11 @@
+---
+type: docker
+name: Docker Mysql
+config_script: config_docker.py
+description: Docker Mysql
+icon: Server.png
+ethernet: 2
+console: telnet
+ram: 256
+docker_options: ""
+...

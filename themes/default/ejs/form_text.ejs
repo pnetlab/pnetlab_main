@@ -1,0 +1,40 @@
+<form id="main-modal" class="container col-md-12 col-lg-12 add-text-form">
+    <div class="row">
+        <div class="col-md-12 col-md-offset-0 form-group">
+            <label class="col-md-3 control-label form-group-addon">Text</label>
+            <div class="col-md-9">
+                <textarea class="form-control main-text autofocus" >
+        </textarea>
+                </div>
+            </div> <br>
+        <div class="col-md-12 col-md-offset-0 form-group">
+            <label class="col-md-3 control-label form-group-addon">Font Size</label>
+            <div class="col-md-9">
+                <input type="number" min="0" class="form-control text_font_size" value="12">
+                </div>
+            </div> <br>
+        <div class="col-md-12 col-md-offset-0 form-group">
+            <label class="col-md-3 control-label form-group-addon">Font Style</label>
+            <div class="col-md-9">
+                <select class="form-control text-font-style-select" >
+                    </select>
+                </div>
+            </div> <br>
+        <div class="col-md-12 col-md-offset-0 form-group">
+            <label class="col-md-3 control-label form-group-addon">Font Color</label>
+            <div class="col-md-9">
+                <input type="color" class="form-control text_font_color">
+                </div>
+            </div> <br>
+        <div class="col-md-12 col-md-offset-0 form-group">
+            <label class="col-md-3 control-label form-group-addon">Background Color</label>
+            <div class="col-md-9">
+                <input type="color" class="form-control text_background_color">
+                </div>
+            </div> <br>
+        <button type="submit" class="btn btn-success col-md-offset-1"><%=MESSAGES[47]%></button>
+        <button type="button" class="btn" data-dismiss="modal"><%=MESSAGES[18]%></button>
+    </div>
+    <input  type="text" class="hide left-coordinate" value="<%=left%>">
+    <input  type="text" class="hide top-coordinate" value="<%=top%>">
+</form>

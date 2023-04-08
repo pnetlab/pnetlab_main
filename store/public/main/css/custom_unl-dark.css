@@ -1,0 +1,974 @@
+.customHover tr:hover td {
+  background-color: #162329;
+}
+
+.tooltip-inner {
+  white-space:nowrap;
+  max-width:none;
+}
+
+.scale-menu-inside{
+  margin:5px;
+}
+.scale-menu-helper{
+  position: absolute; 
+  width:100%;
+}
+.scale-menu-collapsed{
+  right:0;
+  height: 45px; 
+  width:52px; 
+  background-color:#fff; 
+  position:absolute; 
+  z-index:14;
+  -webkit-box-shadow: 0px 5px 74px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 5px 74px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 5px 74px 0px rgba(0,0,0,0.75);
+  background-color: #ddd;
+}
+
+.scale-menu{
+  right:0;
+  height: 185px; 
+  width:52px; 
+  background-color:#fff; 
+  position:absolute; 
+  z-index:14;
+  -webkit-box-shadow: 0px 5px 74px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 5px 74px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 5px 74px 0px rgba(0,0,0,0.75);
+  background-color: #ddd;
+}
+
+div.pv_element{
+  position:absolute;
+  z-index:10;
+}
+
+div.line{
+  transform-origin: 0 100%;
+  height: 1px; /* Line width of 3 */
+  background: green; /* Black fill */
+  z-index:5;
+}
+
+.tablefont tbody td {
+  font-size: 18px;
+}
+
+.pointer {
+  cursor:pointer;
+}
+
+.zero-border{
+  border-radius: 0px 0 0 0px;
+}
+
+@-webkit-keyframes ld {
+  0%   { transform: rotate(0deg) scale(1); }
+  50%  { transform: rotate(180deg) scale(1.1); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+@-moz-keyframes ld {
+  0%   { transform: rotate(0deg) scale(1); }
+  50%  { transform: rotate(180deg) scale(1.1); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+@-o-keyframes ld {
+  0%   { transform: rotate(0deg) scale(1); }
+  50%  { transform: rotate(180deg) scale(1.1); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+@keyframes ld {
+  0%   { transform: rotate(0deg) scale(1); }
+  50%  { transform: rotate(180deg) scale(1.1); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+.m-progress {
+    position: relative;
+    opacity: .8;
+    color: transparent !important;
+    text-shadow: none !important;
+}
+
+.m-progress:hover,
+.m-progress:active,
+.m-progress:focus {
+    cursor: default;
+    color: transparent;
+    outline: none !important;
+    box-shadow: none;
+}
+
+.m-progress:before {
+    content: '';
+    
+    display: inline-block;
+    
+    position: absolute;
+    background: transparent;
+    border: 1px solid #444;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    
+    box-sizing: border-box;
+    
+    top: 50%;
+    left: 50%;
+    margin-top: -12px;
+    margin-left: -12px;
+    
+    width: 24px;
+    height: 24px;
+    
+    -webkit-animation: ld 1s ease-in-out infinite;
+    -moz-animation:    ld 1s ease-in-out infinite;
+    -o-animation:      ld 1s ease-in-out infinite;
+    animation:         ld 1s ease-in-out infinite;
+}
+
+/*
+CSS for load img
+  START
+*/
+
+.spinner {
+  margin: 0px;
+  width: 50px;
+  height: 12px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color: #337ab7;
+  height: 100%;
+  width: 3px;
+  display: inline-block;
+  
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+
+/*
+CSS for load img
+  END
+*/
+
+/*
+Preview images size //START
+*/
+.AristaSW_s2{width:60px;height:27}
+
+.ASA1_s2{width:60px;height:69}
+
+.ASA_s2{width:60px;height:69}
+
+.CiscoACS_s2{width:60px;height:37}
+
+.CiscoWAAS_s2{width:60px;height:43}
+
+.Cloud_s2{width:60px;height:36}
+
+.CSRv1000_s2{width:60px;height:58}
+
+.CustomShape_s2{width:60px;height:42}
+
+.Desktop_s2{width:60px;height:52}
+
+.Firewall_s2{width:60px;height:82}
+
+.FrameRelay_s2{width:60px;height:62}
+
+.HUB_s2{width:60px;height:30}
+
+.IPphone_s2{width:60px;height:42}
+
+.IPS_s2{width:60px;height:33}
+
+.ISE_s2{width:60px;height:42}
+
+.JuniperMX_s2{width:60px;height:57}
+
+.JuniperSRX_s2{width:60px;height:58}
+
+.Laptop_s2{width:60px;height:48}
+
+.LoadBalancer_s2{width:60px;height:39}
+
+.MPLS_s2{width:60px;height:60}
+
+.NetworkAnalyzer_s2{width:60px;height:54}
+
+.Nexus7K_s2{width:60px;height:81}
+
+.NexusK5_s2{width:60px;height:30}
+
+.PaloAlto_s2{width:60px;height:67}
+
+.Pix_s2{width:60px;height:34}
+
+.Router_cursor_s2{width:60px;height:34}
+
+.router_icon_s2{width:60px;height:40}
+
+.Router_s2{width:60px;height:33}
+
+.Server2_s2{width:60px;height:86}
+
+.Server_s2{width:60px;height:85}
+
+.Switch_cursor_s2{width:60px;height:26}
+
+.switch_icon_s2{width:60px;height:30}
+
+.SwitchL3_s2{width:60px;height:60}
+
+.Switch_s2{width:60px;height:27}
+
+.vWLC_s2{width:60px;height:34}
+
+.WANOptimizer_s2{width:60px;height:43}
+
+.WSA_s2{width:60px;height:42}
+
+.XR_s2{width:60px;height:60}
+
+.AristaSW_s3{width:40px;height:18}
+
+.ASA1_s3{width:40px;height:46}
+
+.ASA_s3{width:40px;height:46}
+
+.CiscoACS_s3{width:40px;height:24}
+
+.CiscoWAAS_s3{width:40px;height:28}
+
+.Cloud_s3{width:40px;height:24}
+
+.CSRv1000_s3{width:40px;height:39}
+
+.CustomShape_s3{width:40px;height:28}
+
+.Desktop_s3{width:40px;height:35}
+
+.Firewall_s3{width:40px;height:54}
+
+.FrameRelay_s3{width:40px;height:41}
+
+.HUB_s3{width:40px;height:20}
+
+.IPphone_s3{width:40px;height:28}
+
+.IPS_s3{width:40px;height:22}
+
+.ISE_s3{width:40px;height:28}
+
+.JuniperMX_s3{width:40px;height:38}
+
+.JuniperSRX_s3{width:40px;height:39}
+
+.Laptop_s3{width:40px;height:32}
+
+.LoadBalancer_s3{width:40px;height:26}
+
+.MPLS_s3{width:40px;height:40}
+
+.NetworkAnalyzer_s3{width:40px;height:36}
+
+.Nexus7K_s3{width:40px;height:54}
+
+.NexusK5_s3{width:40px;height:20}
+
+.PaloAlto_s3{width:40px;height:45}
+
+.Pix_s3{width:40px;height:22}
+
+.Router_cursor_s3{width:40px;height:22}
+
+.router_icon_s3{width:40px;height:26}
+
+.Router_s3{width:40px;height:22}
+
+.Server2_s3{width:40px;height:57}
+
+.Server_s3{width:40px;height:57}
+
+.Switch_cursor_s3{width:40px;height:17}
+
+.switch_icon_s3{width:40px;height:20}
+
+.SwitchL3_s3{width:40px;height:40}
+
+.Switch_s3{width:40px;height:18}
+
+.vWLC_s3{width:40px;height:22}
+
+.WANOptimizer_s3{width:40px;height:28}
+
+.WSA_s3{width:40px;height:28}
+
+.XR_s3{width:40px;height:40}
+
+.AristaSW_s4{width:30px;height:13}
+
+.ASA1_s4{width:30px;height:34}
+
+.ASA_s4{width:30px;height:34}
+
+.CiscoACS_s4{width:30px;height:18}
+
+.CiscoWAAS_s4{width:30px;height:21}
+
+.Cloud_s4{width:30px;height:18}
+
+.CSRv1000_s4{width:30px;height:29}
+
+.CustomShape_s4{width:30px;height:21}
+
+.Desktop_s4{width:30px;height:26}
+
+.Firewall_s4{width:30px;height:41}
+
+.FrameRelay_s4{width:30px;height:31}
+
+.HUB_s4{width:30px;height:15}
+
+.IPphone_s4{width:30px;height:21}
+
+.IPS_s4{width:30px;height:16}
+
+.ISE_s4{width:30px;height:21}
+
+.JuniperMX_s4{width:30px;height:28}
+
+.JuniperSRX_s4{width:30px;height:29}
+
+.Laptop_s4{width:30px;height:24}
+
+.LoadBalancer_s4{width:30px;height:19}
+
+.MPLS_s4{width:30px;height:30}
+
+.NetworkAnalyzer_s4{width:30px;height:27}
+
+.Nexus7K_s4{width:30px;height:40}
+
+.NexusK5_s4{width:30px;height:15}
+
+.PaloAlto_s4{width:30px;height:33}
+
+.Pix_s4{width:30px;height:17}
+
+.Router_cursor_s4{width:30px;height:17}
+
+.router_icon_s4{width:30px;height:20}
+
+.Router_s4{width:30px;height:16}
+
+.Server2_s4{width:30px;height:43}
+
+.Server_s4{width:30px;height:42}
+
+.Switch_cursor_s4{width:30px;height:13}
+
+.switch_icon_s4{width:30px;height:15}
+
+.SwitchL3_s4{width:30px;height:30}
+
+.Switch_s4{width:30px;height:13}
+
+.vWLC_s4{width:30px;height:17}
+
+.WANOptimizer_s4{width:30px;height:21}
+
+.WSA_s4{width:30px;height:21}
+
+.XR_s4{width:30px;height:30}
+
+.AristaSW_s5{width:20px;height:9}
+
+.ASA1_s5{width:20px;height:23}
+
+.ASA_s5{width:20px;height:23}
+
+.CiscoACS_s5{width:20px;height:12}
+
+.CiscoWAAS_s5{width:20px;height:14}
+
+.Cloud_s5{width:20px;height:12}
+
+.CSRv1000_s5{width:20px;height:19}
+
+.CustomShape_s5{width:20px;height:14}
+
+.Desktop_s5{width:20px;height:17}
+
+.Firewall_s5{width:20px;height:27}
+
+.FrameRelay_s5{width:20px;height:20}
+
+.HUB_s5{width:20px;height:10}
+
+.IPphone_s5{width:20px;height:14}
+
+.IPS_s5{width:20px;height:11}
+
+.ISE_s5{width:20px;height:14}
+
+.JuniperMX_s5{width:20px;height:19}
+
+.JuniperSRX_s5{width:20px;height:19}
+
+.Laptop_s5{width:20px;height:16}
+
+.LoadBalancer_s5{width:20px;height:13}
+
+.MPLS_s5{width:20px;height:20}
+
+.NetworkAnalyzer_s5{width:20px;height:18}
+
+.Nexus7K_s5{width:20px;height:27}
+
+.NexusK5_s5{width:20px;height:10}
+
+.PaloAlto_s5{width:20px;height:22}
+
+.Pix_s5{width:20px;height:11}
+
+.Router_cursor_s5{width:20px;height:11}
+
+.router_icon_s5{width:20px;height:13}
+
+.Router_s5{width:20px;height:11}
+
+.Server2_s5{width:20px;height:28}
+
+.Server_s5{width:20px;height:28}
+
+.Switch_cursor_s5{width:20px;height:8}
+
+.switch_icon_s5{width:20px;height:10}
+
+.SwitchL3_s5{width:20px;height:20}
+
+.Switch_s5{width:20px;height:9}
+
+.vWLC_s5{width:20px;height:11}
+
+.WANOptimizer_s5{width:20px;height:14}
+
+.WSA_s5{width:20px;height:14}
+
+.XR_s5{width:20px;height:20}
+
+/*
+Preview images size //END
+*/
+
+/*
+Style for form-group-selection
+*/
+.form-group-selection{
+  cursor: pointer;
+  padding: 5px 0 5px 0;
+}
+.form-group-selection label{
+  line-height: 34px;
+}
+.form-group-selection i{
+  float: right;
+  line-height: 37px;
+}
+.container-img .imageBlock{
+  float: left;
+  width: 136px;
+  height: 80px;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+}
+.container-img .imageBlock img{
+  width: 35%;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.container-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: white;
+  border: 1px solid #d2d6de;
+  padding-top: 10px;
+}
+.parent-form{
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.row-icon{
+  padding: 0 10px;
+}
+.container__img {
+  width: 90%;
+  height: 70%;
+  position: relative;
+}
+.container__text {
+  width: 90%;
+  height: 20%;
+}
+/*
+Style for form-group-selection //END
+*/
+
+
+.container-img-nodeList .imageBlock{
+  float: left;
+  width: 100px;
+  height: 80px;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+}
+.container-img-nodeList .imageBlock img{
+  width: 35%;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.container-img-nodeList{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: white;
+  border: 1px solid #d2d6de;
+  padding-top: 10px;
+  overflow: auto;
+}
+/*
+Style for startUpConfigModal
+*/
+.modal-body .list_group .list_group_item {
+    position: relative;
+    display: block;
+    padding: 10px 0px;
+    margin-bottom: -1px;
+    background-color: #fff;
+}
+.modal-header .glyphicon{
+  margin: 2px 10px 0 0;
+}
+/*
+Style for startUpConfigModal //END
+*/
+/*
+Style for labDetails
+*/
+.modal-body .lab-details{
+  text-align: center;
+}
+.modal-body .lab-details p{
+  margin-bottom: 10px;
+}
+.modal-body .lab-details code{
+  background-color: transparent;
+  color: #317087;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+}
+/*
+Style for labDetails //END
+*/
+
+/*
+Style for networks from sidebar
+*/
+.form-control-networks{
+  width: 160px;
+  height: 24px;
+}
+/*
+Style for networks from sidebar //END
+*/
+
+/*
+Style for icon cange //Start
+*/
+.tbodyNodeList .col-md-4{
+  padding: 0px;
+}
+.tbodyNodeList .row{
+  padding: 0px;
+  margin: 0px;
+}
+.td{
+  padding-top: 0px;
+}
+.tbodyNodeList .form-group-selection{
+    cursor: pointer;
+    padding: 5px 0 0px 0;
+}
+.tbodyNodeList label{
+  line-height: 0px;
+  margin-bottom: 6px;
+  font-weight: normal;
+  margin-top: 3px;
+  display: block;
+}
+.tbodyNodeList .form-group-selection i{
+  line-height: 8px;
+}
+.tbodyNodeList .form-group-selection img{
+  width: 35%;
+  height: 35%;
+}
+/*
+Style for icon cange //END
+*/
+
+/*
+Style for dropdown //START
+*/
+.context-menu__item .list-group-dropdown{
+  display: none;
+}
+.context-menu__item:hover .list-group-dropdown{
+  display: block;
+}
+
+/*
+Style for dropdown "More columns" //START
+*/
+.dropdown-menu__column li{
+  padding: 3px 0 3px 10px;
+  color: gray;
+}
+.dropdown-menu__column li input{
+  margin-right: 10px;
+}
+
+/*
+Sturtup-congig 
+*/
+.form-horizontal--active{
+  display: block;
+}
+.form-horizontal--hidden{
+  display: none;
+}
+.list-group .glyphicon-floppy-saved{
+  margin-left: 10px;
+}
+/*
+Free select
+*/
+.activeFreeSelect i{
+  color: red;
+}
+.free-selected{
+  -webkit-box-shadow: 0 0 10px 10px rgba(70, 166, 182, 0.5);
+     -moz-box-shadow: 0 0 10px 10px rgba(70, 166, 182, 0.5);
+       -o-box-shadow: 0 0 10px 10px rgba(70, 166, 182, 0.5);
+          box-shadow: 0 0 10px 10px rgba(70, 166, 182, 0.5);
+}
+/*
+*Opacity for modals
+*/
+.modal-content{
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+.modal-content_opacity{
+  opacity: 0.3;
+  
+}
+/*
+*Style for form group from EDIT LAB //START
+*/
+.control-label_custom{
+  text-align: left !important;
+}
+.control-label_custom_pos{
+   position: relative;
+}
+.sup-star{
+  color:  #a6a6a6;
+  font-size: 17px;
+  position: absolute;
+  right: 1px;
+  top: 15px;
+}
+.parent-required{
+  position: relative;
+  color:  #a6a6a6;
+}
+.p-required{
+  padding-left: 17px;
+  font-size: 14px;
+  padding-top: 10px;
+}
+.sup-required{
+  color: #a6a6a6;
+  font-size: 19px;
+  left: 21px;
+  position: absolute;
+  top: 21px;
+}
+.chars,.chars-full{
+  color: #a6a6a6;
+  font-size: 12px;
+}
+.chars--active{
+  font-size: 12px;
+  color: rgb(250,0,0);
+  font-weight: bold;
+}
+.input--error{
+  -webkit-box-shadow: 0 0 5px 0 rgba(250,0,0,0.5);
+  -moz-box-shadow: 0 0 5px 0 rgba(250,0,0,0.5);
+  -o-box-shadow: 0 0 5px 0 rgba(250,0,0,0.5);
+  box-shadow: 0 0 5px 0 rgba(250,0,0,0.5);
+}
+.input--error:focus{
+  -webkit-box-shadow: 0 0 5px 0 rgba(250,0,0,0.5);
+  -moz-box-shadow: 0 0 5px 0 rgba(250,0,0,0.5);
+  -o-box-shadow: 0 0 5px 0 rgba(250,0,0,0.5);
+  box-shadow: 0 0 5px 0 rgba(250,0,0,0.5);
+  border-color: rgb(250,0,0);
+}
+/*
+*Style for form group from EDIT LAB //END
+*/
+/*
+* Style for menu with folder and lab list from main page //START
+*/
+.mailbox-star{
+  position: relative;
+}
+.button-box{
+  position: absolute;
+  top: 47%;
+  right: 0;
+  transform:translateY(-50%);
+}
+.box-default{
+  margin-bottom: 0px;
+}
+/*
+* Style for menu with folder and lab list from main page //END
+*/
+/*
+* Style for contextmenu  //START
+*/
+#menu_title, #menu_title_left{
+  color: #317087;
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.42857;
+  padding: 3px 14px;
+  white-space: nowrap;
+}
+/* navberoverwrite */
+.navbar-static-top {
+  background-color: #000 !important;
+}
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+    background-color: #000 !important;
+    border-color: #eee !important; 
+    /*border-width: 1px !important;
+    padding: 14px !important;
+    border-style: solid !important;
+    border-color: #aaaaaa !important;*/
+}
+
+.dropdown-menu {
+    background-color: #263339 !important;
+}
+.dropdown-menu > li > a {
+    color: #f6f6f6 !important;
+}
+
+.dropdown-menu > li > a:hover {
+    color: #061319 !important;
+}
+
+.jsplumb-connector { z-index:1000; }
+.jsplumb-endpoint { z-index:1001; }
+.jsplumb-overlay { z-index:1002; }
+
+body {
+   background-color: #263339 !important;
+}
+.login-box-body, .register-box-body {
+    background: #263339 !important;
+    padding: 20px !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: #666 !important;
+    color: #f6f6f6 !important;
+}
+
+#btnlogin {
+   color: #aaa !important ;
+   background-color: #263339 !important;
+   border: 1px !important;
+   border-style: solid !important;
+}
+
+
+#btnlogin:hover {
+   color: #000  !important ;
+   background-color: #317087 !important ;
+}
+.content-wrapper {
+   background-color: #263339 !important;
+}
+.box {
+   background-color: #263339 !important;
+   border-width: 1px !important;
+   padding: 14px !important;
+   margin: 0px !important;
+   border-style: solid !important;;
+   border-color: #000 !important;
+   box-shadow: #000 !important;
+}
+.box-header {
+   border-bottom-color: #263339 !important;
+   color: #666 !important;
+}
+.form-control {
+   background-color: #162329 !important;
+   border-color: #061319 !important;
+}
+.ng-scope { 
+   background-color: #263339 !important;
+}
+
+.ng-scope:hover {
+   background-color: #263339 !important;
+}
+
+.table > tbody > tr > td {
+   border-top-color: #263339 !important;
+}
+.btn-default {
+   background-color: #263339 !important;
+   color: #777 !important;
+   border-color: #777 !important;
+}
+.btn-default:hover {
+   background-color: #777 !important;
+   color: #263339 !important;
+   border-color: #777 !important;
+}
+.breadcrumb {
+   background-color: #263339 !important;
+}
+.ng-binding {
+  color: #777 !important;
+}
+.pointer {
+  color: #3c8dbc !important;
+}
+#divPreview  {
+ background-color: #162329 !important;
+ border-style: groove !important;
+ border-width: 3px !important;
+ border-color: #263339 !important;
+}
+.pv_element {
+ background-color: #162329 !important;
+}
+.line {
+ color: #3c8dbc !important;
+}
+.btn-success {
+ background-color: #314a3e !important;;
+ color: #008d4c !important;
+}
+.btn-success:hover {
+ background-color: #314a3e !important;;
+ color: #fff !important;
+}
+.btn-primary {
+ background-color: #2e556c;
+}
+.btn-grey:hover {
+ background-color: #2e556c;
+ color: #eee;
+}
+.btn-grey {
+ background-color: #2e556c;
+}
+.btn-danger {
+    background-color: #934035;
+    border-color: #d73925;
+}
+.control-label {
+ color: #3c8dbc !important;
+}
+.form-control {
+ color: #777 !important;
+}
+.modal-header {
+ color: #eee !important;
+}

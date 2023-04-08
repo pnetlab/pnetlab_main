@@ -1,0 +1,29 @@
+{
+"ERROR_ARRAY": "{data} must be an array",
+"ERROR_FORMAT": "{data} wrong format",
+"ERROR_UNDEFINE": "{data} undefine",
+"ERROR_DB": "Database error",
+"ERROR_DUPLICATE": "{data} is existed",
+"ERROR_AUTHEN": "{data}",
+"ERROR_PERMISSION": "No permission.\n{data}",
+"ERROR": "{data}",
+"error_lab_running": "The Lab {data} is still running, Destroy all session first",
+"error_folder_workspace": "Folder {folder} is workspace of {role} Role.",
+"error_folder_running": "Some Lab in folder {data} is running. Destroy all Lab sessions first",
+"error_lab_timeout": "Your account has been logged out. Checking your internet, update Time of the Box and login to only 1 Box at a time. Login again to continue.",
+"error_lab_permission": "You do not have permission to use this Lab. Go to Lab Store to Get Lab",
+"error_lab_expired": "Lab time has ended. Go to Lab Store to Get more usage time",
+"No License": "No License",
+"This Lab is for the ONLINE mode only": "This Lab is for the ONLINE mode only",
+"You do not have access": "You do not have access",
+"error_user_unactive": "You can not login yet, your Account will take effect from: {data}",
+"error_user_expired": "You can not login, your account has been out of date from: {data}",
+"Password is wrong": "Password is wrong",
+"Can not get data from server": "Can not get data from server",
+"error_uploadsize_limit": "Only upload less than {data} files at a time",
+"error_md5_fail": "Md5 check failed. Download {data} failed after 3 attempts"
+
+
+
+
+}

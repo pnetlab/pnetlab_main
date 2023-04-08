@@ -1,0 +1,9 @@
+---
+type: vpcs
+name: VPC
+config_script: embedded
+description: Virtual PC (VPCS)
+cpulimit: 1
+icon: Desktop.png
+ethernet: 1
+...

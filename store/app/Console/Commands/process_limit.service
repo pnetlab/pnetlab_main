@@ -1,0 +1,9 @@
+[Unit]
+Description=Update RAM CPU status
+After=mysql.service
+
+[Service]
+ExecStart=/opt/unetlab/html/store/app/Console/Commands/process_limit
+RemainAfterExit=yes
+[Install]
+WantedBy=multi-user.target

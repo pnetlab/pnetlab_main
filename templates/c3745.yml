@@ -1,0 +1,71 @@
+---
+type: dynamips
+name: "C3745"
+config_script: embedded
+description: Cisco IOS C3745 (Dynamips)
+icon: Router.png
+idlepc: "0x60a80678"
+nvram: 128
+ram: 256
+
+slot1:
+    value: ""
+    type: list
+    options:
+        "": Empty
+        NM-1FE-TX: NM-1FE-TX
+        NM-16ESW: NM-16ESW
+        NM-4T: NM-4T
+slot2:
+    value: ""
+    type: list
+    options:
+        "": Empty
+        NM-1FE-TX: NM-1FE-TX
+        NM-16ESW: NM-16ESW
+        NM-4T: NM-4T
+
+slot3:
+    value: ""
+    type: list
+    options:
+        "": Empty
+        NM-1FE-TX: NM-1FE-TX
+        NM-16ESW: NM-16ESW
+        NM-4T: NM-4T
+slot4:
+    value: ""
+    type: list
+    options:
+        "": Empty
+        NM-1FE-TX: NM-1FE-TX
+        NM-16ESW: NM-16ESW
+        NM-4T: NM-4T
+
+wic1:
+    value: ""
+    type: list
+    width: 4
+    options:
+        "": Empty
+        "WIC-1T": "WIC-1T"
+        "WIC-2T": "WIC-2T"
+wic2:
+    value: ""
+    type: list
+    width: 4
+    options:
+        "": Empty
+        "WIC-1T": "WIC-1T"
+        "WIC-2T": "WIC-2T"
+wic3:
+    value: ""
+    type: list
+    width: 4
+    options:
+        "": Empty
+        "WIC-1T": "WIC-1T"
+        "WIC-2T": "WIC-2T"
+    
+dynamips_options: -P 3745 -o 4 -c 0x2102 -X --disk0 128 --disk1 128
+...

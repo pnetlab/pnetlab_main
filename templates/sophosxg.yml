@@ -1,0 +1,27 @@
+---
+type: qemu
+description: Sophos XG
+name: SophosXG
+cpulimit: 1
+icon: Sophos_fw.png
+cpu: 1
+ram: 2048
+ethernet: 4
+eth_name:
+- PortA
+- PortB
+- PortC
+- PortD
+- PortE
+- PortF
+- PortG
+- PortH
+- PortI
+- PortJ
+console: vnc
+shutdown: 1
+qemu_arch: x86_64
+qemu_version: 2.12.0
+qemu_nic: virtio-net-pci
+qemu_options: -machine type=pc,accel=kvm -vga std -usbdevice tablet -boot order=cd
+...

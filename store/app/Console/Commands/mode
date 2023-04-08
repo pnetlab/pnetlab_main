@@ -1,0 +1,2 @@
+#!/bin/sh
+php /opt/unetlab/html/store/artisan mode $1 $2

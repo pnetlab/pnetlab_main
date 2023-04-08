@@ -1,0 +1,9 @@
+:export {
+  font_family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font_size: 12px;
+  font_color: black;
+  primary_color: #009688;
+  dark_color: #006064;
+  light_color: #009197;
+  menu_top: 60px;
+  menu_left: 215px; }

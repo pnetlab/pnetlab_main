@@ -1,0 +1,61 @@
+<form id="form-lab-<%=action%>" class="form-horizontal form-lab-<%=action%>">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label class="col-md-2 control-label"><%=MESSAGES[20]%><sup class="sup-star">*</sup></label>
+                <div class="col-md-10">
+                    <input class="form-control" name="lab[path]" value="<%=path%>" disabled="" type="text"/>
+                    </div>
+                </div>
+            <div class="form-group">
+                <label class="col-md-2 control-label"><%=MESSAGES[19]%><sup class="sup-star">*</sup></label>
+                <div class="col-md-10"><input class="form-control autofocus" name="lab[name]" value="<%=name%>" type="text"/>
+                    <span class="chars" >Use only [A-Za-z0-9_- ]chars</span>
+                    </div>
+                </div>
+            <div class="form-group">
+                <label class="col-md-2 control-label"><%=MESSAGES[26]%><sup class="sup-star">*</sup></label>
+                <div class="col-md-10"><input class="form-control" name="lab[version]" value="<%=version%>" type="text"/>
+                    <span class="chars">Must be interger ([0-9]chars)</span>
+                    </div>
+                </div>
+            <div class="form-group">
+                <label class="col-md-2 control-label">Author</label>
+                <div class="col-md-10">
+                    <input class="form-control" name="lab[author]" value="<%=author%>" type="text"/>
+                    </div>
+                </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label"><%=MESSAGES[158]%><sup class="sup-star">*</sup></label>
+                <div class="col-md-3"><input class="form-control" name="lab[scripttimeout]" value="<%=scripttimeout%>" type="text"/>
+                    </div>
+                <label class="col-md-3 control-label control-label_custom">Seconds</label>
+                </div>
+            <div class="row">
+                <div class="col-md-12 parent-required">
+                    <p class="p-required"><sup class="sup-required">*</sup>- Required Fields</p>
+                    </div>
+                </div>
+            </div>
+        <div class="col-md-8">
+            <div class="form-group">
+                <label class="col-md-2 control-label"><%=MESSAGES[27]%></label>
+                <div class="col-md-10">
+                    <textarea class="form-control" name="lab[description]" rows="6" style="width: 100%;"><%=description%></textarea>
+                    </div>
+                </div>
+            <div class="form-group">
+                <label class="col-md-2 control-label"><%=MESSAGES[88]%></label>
+                <div class="col-md-10">
+                    <textarea class="form-control" name="lab[body]" rows="6" style="width: 100%;"><%=body%></textarea>
+                    </div>
+                </div>
+            <div class="form-group">
+                <div class="col-md-2 col-md-offset-10">
+                    <button type="submit" class="btn btn-success"><%=MESSAGES[47]%></button>
+                    <button type="button" class="btn btn-flat" data-dismiss="modal"><%=MESSAGES[18]%></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

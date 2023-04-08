@@ -1,0 +1,154 @@
+#lab-viewport-hover {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 40px;
+    right: 0;
+}
+
+#editor {
+    position: relative;
+    width: 100%;
+    display:none;
+}
+
+.config-list  ul {
+    line-height: 27px !important;
+}
+
+/* Checkbox switch */
+
+/* The switch - the box around the slider */
+.checkbox-switch {
+    position: relative;
+    display: inline-block;
+    width: 58px;
+    height: 23px;
+    border-radius: 6px;
+    border: 1px solid #999;
+    margin-bottom: 0 !important;
+}
+
+/* Hide default HTML checkbox */
+.checkbox-switch input {display:none;}
+
+/* The slider */
+.checkbox-slider-off, checkbox-slider-on {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 6px;
+    background-color: white;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+.checkbox-slider-off:before {
+    font-size: 11px;
+    font-weight: normal;
+    text-align: center;
+    position: absolute;
+    border-radius: 4px 0 0 4px;
+    content: "OFF";
+    color: white;
+    line-height: 21px;
+    padding: 0 0 0 0;
+    vertical-align: -100%;
+    height: 21px;
+    width: 30px;
+    background-color: #ff4d4d;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+
+.checkbox-slider-on:before {
+    font-size: 11px;
+    font-weight: normal;
+    text-align: center;
+    position: absolute;
+    border-radius: 4px 0 0 4px;
+    content: "ON";
+    color: white;
+    line-height: 21px;
+    padding: 0 0 0 0;
+    vertical-align: -100%;
+    height: 21px;
+    width: 30px;
+    background-color: #ff4d4d;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+input:checked + .checkbox-slider-off,
+input:checked + .checkbox-slider-on {
+    background-color: white;
+}
+
+input:checked + .checkbox-slider-off:before,
+input:checked + .checkbox-slider-on:before {
+    background-color: #00a65a;
+    border-radius: 0 4px 4px 0;
+}
+
+input:disabled + .checkbox-slider-off:before,
+input:disabled + .checkbox-slider-on:before {
+    background-color: #ccc;
+}
+
+input:disabled + .checkbox-slider-off,
+input:disabled + .checkbox-slider-on {
+    background-color: #EEE
+}
+
+input:focus + .checkbox-slider-off,
+input:focus + .checkbox-slider-on {
+    box-shadow: 0 0 1px #00a65a;
+}
+
+input:checked + .checkbox-slider-off:before,
+input:checked + .checkbox-slider-on:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+ul.dropdown-menu.inner {
+    z-index: 1000;
+}
+.mlr-10 {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #0066aa;
+}
+
+.editor-hint {
+    color: goldenrod;
+}
+
+.absolute-right {
+    position: absolute;
+    right: 0px;
+    padding-right: 3px;
+    padding-left: 3px;
+    height: 18px;
+    background-color: rgba(255,255,255,0.8)
+}
+.tg-flash {
+    top: -7px;
+}
+
+.config-line {
+    margin-top: 0;margin-bottom: 5px
+}
+.switch-align {
+    margin-bottom: -6px !important
+}
+
+.configs-align {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}

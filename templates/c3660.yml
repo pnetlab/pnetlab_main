@@ -1,0 +1,83 @@
+
+---
+type: dynamips
+name: C3660
+config_script: embedded
+description: Cisco C3660 (Dynamips)
+icon: Router.png
+idlepc: "0x6057deec"
+nvram: 128
+ram: 256
+
+slot1:
+    value: ""
+    type: list
+    options:
+        "": Empty
+        NM-1E: NM-1E
+        NM-4E: NM-4E
+        NM-1FE-TX: NM-1FE-TX 
+        NM-4T: NM-4T
+        NM-16ESW: NM-16ESW
+       
+slot2:
+    value: ""
+    type: list
+    options:
+        "": Empty
+        NM-1E: NM-1E
+        NM-4E: NM-4E
+        NM-1FE-TX: NM-1FE-TX 
+        NM-4T: NM-4T
+        NM-16ESW: NM-16ESW
+       
+        
+slot3:
+    value: ""
+    type: list
+    options:
+        "": Empty
+        NM-1E: NM-1E
+        NM-4E: NM-4E
+        NM-1FE-TX: NM-1FE-TX 
+        NM-4T: NM-4T
+        NM-16ESW: NM-16ESW
+
+slot4:
+    value: ""
+    type: list
+    options:
+        "": Empty
+        NM-1E: NM-1E
+        NM-4E: NM-4E
+        NM-1FE-TX: NM-1FE-TX 
+        NM-4T: NM-4T
+        NM-16ESW: NM-16ESW
+       
+        
+slot5:
+    value: ""
+    type: list
+    options:
+        "": Empty
+        NM-1E: NM-1E
+        NM-4E: NM-4E
+        NM-1FE-TX: NM-1FE-TX 
+        NM-4T: NM-4T
+        NM-16ESW: NM-16ESW
+
+slot6:
+    value: ""
+    type: list
+    options:
+        "": Empty
+        NM-1E: NM-1E
+        NM-4E: NM-4E
+        NM-1FE-TX: NM-1FE-TX 
+        NM-4T: NM-4T
+        NM-16ESW: NM-16ESW
+       
+        
+       
+dynamips_options: -P 3600 -t 3660 -X
+...

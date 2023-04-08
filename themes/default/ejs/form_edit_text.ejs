@@ -1,0 +1,55 @@
+<form id="main-modal-edit" class="container col-md-12 col-lg-12 edit-custom-text-form" data-path="<%=id%>">
+    <div class="row col-md-9  top-part">
+        <label class="edit-custom-text-label">Edit: <%=id%></label><br>
+        <div class="form-group">
+            <label class="control-label form-group-addon">Z-Index</label>
+            <input type="number" class="form-control text-z_index-input" min="-100" max="100" step="1" data-path="<%=id%>">
+            </div>
+        <div class="form-group">
+            <label class="control-label form-group-addon">Text-align</label>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default btn-align-left" data-path="<%=id%>"><i class="glyphicon glyphicon-align-left"></i></button>
+                <button type="button" class="btn btn-default btn-align-center" data-path="<%=id%>"><i class="glyphicon glyphicon-align-center"></i></button>
+                <button type="button" class="btn btn-default btn-align-right" data-path="<%=id%>"><i class="glyphicon glyphicon-align-right"></i></button>
+                </div>
+            </div>
+        <div class="form-group">
+            <label class="control-label form-group-addon">Text-type</label>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default btn-text-bold" data-path="<%=id%>"><i class="glyphicon glyphicon-bold"></i></button>
+                <button type="button" class="btn btn-default btn-text-italic" data-path="<%=id%>"><i class="glyphicon glyphicon-italic"></i></button>
+                </div>
+            </div>
+        <div class="form-group">
+            <label class="control-label form-group-addon">Text-color</label>
+            <input type="color" class="form-control text_color"  data-path="<%=id%>">
+            </div>
+        <div class="form-group">
+            <label class="control-label form-group-addon">Background-color</label> 
+            <input type="color" class="form-control text_background_color"  data-path="<%=id%>">
+            </div>
+        <div class="form-group">
+            <label class="control-label form-group-addon">Transparent</label> 
+            <button type="button" class="btn btn-default text_background_transparent" data-path="<%=id%>"></button>
+            </div>
+        <div class="form-group">
+            <label class="control-label form-group-addon">Rotate</label>
+            <input type="number" class="form-control text-rotation-input"  data-path="<%=id%>" min="-360" max="360" step="1">
+            </div>
+        <div class="form-group">
+            <label class="control-label form-group-addon">Name</label>
+            <input type="text" class="form-control shape-name-input" data-path="<%=id%>">
+            </div>
+        </div>
+    <div class="row col-md-3 btn-part">
+        <button type="button" class="btn btn-success edit-custom-text-form-save" data-path="<%=id%>"><%=MESSAGES[47]%></button>
+        <button type="button" class="btn cancelForm" data-path="<%=id%>"><%=MESSAGES[18]%></button>
+        </div>
+    <input type="text" class="hide firstTextValues-z_index">
+    <input type="text" class="hide firstTextValues-color">
+    <input type="text" class="hide firstTextValues-background-color">
+    <input type="text" class="hide firstTextValues-italic">
+    <input type="text" class="hide firstTextValues-bold">
+    <input type="text" class="hide firstTextValues-align">
+    <input type="text" class="hide firstTextValues-rotation">
+</form>

@@ -1,0 +1,15 @@
+{
+    "versions" : "Versions",
+    "version_id" : "ID",
+    "version_name" : "Name",
+    "version_status" : "Status",
+    "version_status_admin" : "Status Admin",
+    "version_labId" : "Lab ID",
+    "version_unl" : "UNL",
+    "version_path": "Path",
+    "version_md5" : "MD5",
+    "version_time" : "Time",
+    "version_note" : "Note",
+    "version_feedback" : "Feedback",
+    "version_node_des": "Release note. Instructing your users to integrate your lab into Box. This content will not be published on the store."
+  }

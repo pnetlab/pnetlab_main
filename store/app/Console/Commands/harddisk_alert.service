@@ -1,0 +1,9 @@
+[Unit]
+Description=Full Disk Alarm
+After=network.target
+
+[Service]
+ExecStart=/opt/unetlab/html/store/app/Console/Commands/harddisk_alert
+RemainAfterExit=yes
+[Install]
+WantedBy=multi-user.target

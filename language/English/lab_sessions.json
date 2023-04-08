@@ -1,0 +1,9 @@
+{
+"lab_sessions" : "Sessions",
+"lab_session_id" : "Session Id",
+"lab_session_lid" : "Session Lid",
+"lab_session_pod" : "Session Host",
+"lab_session_joined" : "Joined Members",
+"lab_session_path" : "Session Lab Path",
+"lab_session_running": "Running Nodes"
+}

@@ -1,0 +1,87 @@
+
+---
+type: dynamips
+name: C7200
+config_script: embedded
+description: Cisco IOS C7200 (Dynamips)
+icon: Router.png
+idlepc: "0x61da0e54"
+nvram: 128
+ram: 512
+
+slot1:
+    value: ""
+    type: list
+    options:
+        "": Empty
+        PA-FE-TX: PA-FE-TX
+        PA-4E: PA-4E
+        PA-8E: PA-8E
+        PA-4T+: PA-4T+
+        PA-8T: PA-8T
+       
+slot2:
+    value: ""
+    type: list
+    options:
+        "": Empty
+        PA-FE-TX: PA-FE-TX
+        PA-4E: PA-4E
+        PA-8E: PA-8E
+        PA-4T+: PA-4T+
+        PA-8T: PA-8T
+       
+        
+slot3:
+    value: ""
+    type: list
+    options:
+        "": Empty
+        PA-FE-TX: PA-FE-TX
+        PA-4E: PA-4E
+        PA-8E: PA-8E
+        PA-4T+: PA-4T+
+        PA-8T: PA-8T
+       
+        
+slot4:
+    value: ""
+    type: list
+    options:
+        "": Empty
+        PA-FE-TX: PA-FE-TX
+        PA-4E: PA-4E
+        PA-8E: PA-8E
+        PA-4T+: PA-4T+
+        PA-8T: PA-8T
+       
+        
+        
+slot5:
+    value: ""
+    type: list
+    options:
+        "": Empty
+        PA-FE-TX: PA-FE-TX
+        PA-4E: PA-4E
+        PA-8E: PA-8E
+        PA-4T+: PA-4T+
+        PA-8T: PA-8T
+       
+        
+        
+slot6:
+    value: ""
+    type: list
+    options:
+        "": Empty
+        PA-FE-TX: PA-FE-TX
+        PA-4E: PA-4E
+        PA-8E: PA-8E
+        PA-4T+: PA-4T+
+        PA-8T: PA-8T
+       
+
+    
+dynamips_options: -P 7200 -t npe-200 -o 4 -c 0x2102 -X --disk0 128 --disk1 128
+...

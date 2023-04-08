@@ -1,0 +1,166 @@
+.filter_input {
+	padding: 2px;
+    line-height: 0px;
+	width: 120px;
+}
+
+.filter_item {
+	margin-right: 5px;
+	text-align: left;
+}
+
+.filter_text {
+    text-align: left;
+	font-weight: bold;
+	padding-top: 10px;
+    padding-left: 5px;
+}
+
+.filter_item:last-child {
+	margin-right: 0px;
+}
+
+.filter_bar {
+	display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.table_box {
+	padding: 15px;
+	width: 100%;
+}
+
+.column_sort[vector="none"]:AFTER {
+	content: "\f0dc";
+	font-family: FontAwesome;
+	margin-left: 4px;
+    opacity: 0.5;
+}
+.column_sort[vector="asc"]:AFTER {
+	content: "\f0de";
+	font-family: FontAwesome;
+	margin-left: 4px;
+    
+}
+.column_sort[vector="desc"]:AFTER {
+	content: "\f0dd";
+	font-family: FontAwesome;
+	margin-left: 4px;
+    
+}
+.column_sort{
+	cursor: pointer;
+}
+
+/* button function */
+.table_function {
+	display: flex;
+}
+.function_button {
+	display: flex;
+	margin: auto;
+}
+.function_button span {
+	display: flex;
+	font-weight: bold;
+}
+.function_button i {
+	margin: auto 3px;
+}
+
+.setting_btn {
+	margin: 0px 2px; 
+	font-size:20px; 
+	padding: 6px
+}
+
+/* editor */
+.editor_item {
+	display: grid;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+	align-items: center;
+    
+}
+.editor_input {
+	width: 100%;
+}
+
+/* Page break */
+.page_break i {
+	background: #eaeaea;
+	padding: 4px 10px;
+	border-radius: 2px;
+	margin: 0px 2px;
+	line-height: inherit;
+	font-weight: bold;
+}
+
+.page_break .step {
+	background: #eaeaea;
+	padding: 4px 10px;
+	border-radius: 2px;
+	margin: 0px 2px;
+	line-height: inherit;
+}
+
+.page_break .step:active,.page_break i:active {
+	opacity: 0.6;
+}
+
+.page_break .step:hover,.page_break i:hover {
+	background: #ffe38f;
+}
+
+.page_break {
+	padding: 4px;
+	cursor: pointer;
+}
+
+.page_quantity{
+	padding: 5px;
+	width: 50px;
+	border-radius: 2px;
+	border: solid thin darkgray;
+}
+/*=============================================*/
+
+.main_table th, .main_table td {
+	max-width: 300px;
+	vertical-align: middle;
+	padding: 5px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main_table th{
+	white-space: nowrap;
+	text-align: center;
+	background: #575757;
+	color: white;
+}
+
+.main_table{
+	font-size: 14px;
+}
+
+.modal-body {
+	text-align: initial; 
+	padding: 3px;
+}
+.modal-header {
+	padding: 3px;
+	display: flex;
+    align-items: center;
+}
+
+.modal-header .close {
+    padding: 5px;
+    margin: 0px;
+}
+.modal-header h4{
+	font-size: 14px !important;
+    font-weight: bold;
+    padding: 5px;
+}

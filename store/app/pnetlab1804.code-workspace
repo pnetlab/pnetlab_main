@@ -1,0 +1,44 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../resources"
+		},
+		{
+			"path": "../../../wrappers_factory"
+		},
+		{
+			"path": "../../includes"
+		},
+		{
+			"path": "../../themes"
+		},
+		{
+			"path": "../../devices"
+		},
+		{
+			"path": "../../../dynamips_factory/dynamips"
+		},
+		{
+			"path": "../../../wrappers"
+		},
+		{
+			"path": "../../templates"
+		},
+		{
+			"path": "../../language"
+		},
+		{
+			"path": "../public"
+		},
+		{
+			"path": "../vendor/laravel/framework/src/Illuminate"
+		},
+		{
+			"path": "../../../scripts"
+		}
+	],
+	"settings": {}
+}
