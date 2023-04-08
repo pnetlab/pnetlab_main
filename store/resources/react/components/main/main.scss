@@ -1,0 +1,30 @@
+.wrapper.ng-scope {
+    width: 100%;
+  }
+  .nav-item{
+    padding: 0px 7px;
+  }
+
+  .modal-content {
+    border-radius: 5px;
+}
+
+.input-group .form-control, .input-group .input-group-addon, .input-group .btn {
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.button-box {
+    position: absolute;
+    top: 47%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.mailbox-star {
+    position: relative;
+}
+
+

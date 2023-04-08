@@ -1,0 +1,52 @@
+
+    .timer_frame{
+        // position: absolute;
+        // bottom: 0;
+        // right: -200px;
+        // margin: 25px;
+        margin-right: 7px;
+        position: relative;
+       
+        .timer_box{
+            border: solid thin #337ab7;
+            background: white;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        input {
+            width: 25px;
+            border:none;
+            padding: 2px;
+            margin: 0px 2px;
+            font-weight: bold;
+            color: #337ab7;
+        }
+        .btn {
+            border-bottom-left-radius: 0px;
+            border-top-left-radius: 0px;
+            padding: 5px;
+            text-align: center;
+            width: 50px;
+            font-size: 11px;
+            text-transform: uppercase;
+            border: none;
+        }
+        .timer-edit{
+            display:none;
+            text-align: center;
+            opacity: 0;
+            width: 25px;
+            position: absolute;
+            background: #ffeb3b4a;
+            &:hover{
+                opacity: 100;
+            }
+            &.timer-up{
+                top: -24px;
+            }
+            &.timer-down{
+                bottom: -24px;
+            }
+        }
+    }

@@ -1,0 +1,119 @@
+@import '@root/assets/css/constants';
+
+$font_size: $font_size;
+
+.main_table{
+	font-size: $font_size;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.filter_item {
+
+	width: 100%;
+	display: flex;
+	align-items: center;
+	
+	&:last-child {
+		margin-right: 0px;
+	}
+	
+	.filter_text {
+		overflow: hidden;
+	    text-overflow: ellipsis;
+	    font-weight: bold;
+	    width: 30%;
+	    color: white;
+	}
+	
+	.filter_item_input{
+		padding: 5px;
+		margin-top: 5px;
+		border-radius: 4px;
+	    border: solid thin darkgray;
+	    background: white;
+	}
+	
+	.filter_input {
+		padding: 2px;
+		width: 70%;
+	}
+}
+
+.filter_bar {
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    padding: 5px;
+    background: $primary_color;
+    border-radius: 10px;
+}
+
+.table_box {
+	padding: 15px;
+	width: 100%;
+}
+
+/* button function */
+
+
+.table_function {
+	padding: 5px;
+    border-bottom: solid thin darkgray;
+}
+
+.table_function:last-child{
+	border-bottom: none;
+}
+
+.table_func_right{
+	display: flex;
+}
+
+.table_func_dropdown{
+	left: auto !important;
+	top: 30px !important;
+	right: 0px;
+	padding: 5px;
+	transform: unset !important;
+	will-change: unset !important;
+	z-index: 1050;
+}
+
+.dropdown-menu{
+ 	transform:none !important;
+ 	top: 30px !important;
+}
+
+
+/* editor */
+.editor_item {
+	display: grid;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+	align-items: center;
+    
+}
+
+.editor_item {
+	padding: 5px;
+	width: 100%;
+}
+.editor_item:hover .editor_item_text{
+	font-weight: bold;
+}
+.editor_item_input{
+	padding: 5px;
+	border-radius: 4px;
+    border: solid thin darkgray;
+	
+}
+.editor_item_text{
+	
+}
+			

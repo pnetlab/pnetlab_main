@@ -1,0 +1,68 @@
+
+.light2d {
+  background-image: url('/themes/default/images/background/light_2D.png');
+}
+.dark2d {
+  background-image: url('/themes/default/images/background/dark_2D.png');
+  .node_name {
+    color: white;
+  }
+  .network_name{
+    color: white;
+  }
+}
+.light3d {
+  background-image: url('/themes/default/images/background/light_3D.png');
+}
+.dark3d {
+  background-image: url('/themes/default/images/background/dark_3D.png');
+  .node_name {
+    color: white;
+  }
+  .network_name{
+    color: white;
+  }
+}
+.dark {
+      background : #28353c;
+      .node_name {
+        color: white;
+      }
+      .network_name{
+        color: white;
+      }
+    }
+
+
+#lab_dragable{
+    cursor:move;
+
+}
+
+#lab_preview_frame{
+    height: 450px; 
+    position: relative;
+    overflow: hidden;
+    border: solid thin #ccc;
+}
+.lab_preview_title{
+    padding-bottom: 5px;
+    font-weight: bold;
+    color: #0d274d;
+    font-size: 18px;
+}
+#lab_info_table td, #lab_info_table th{
+    padding:5px
+}
+
+#lab_info_table i {
+    font-size: 8px;
+    color: rgb(23, 162, 184);
+}
+input[type=range][orient=vertical]{
+    writing-mode: bt-lr; /* IE */
+    -webkit-appearance: slider-vertical; /* WebKit */
+}
+.tag.hidden{
+    display:none
+}

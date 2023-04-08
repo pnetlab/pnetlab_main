@@ -1,0 +1,28 @@
+@import '@root/assets/css/constants';
+.menu {
+    display: none;
+}
+
+.main{
+    padding-top: 0px;
+}
+
+.background_cover {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: $primary_color;
+    background-image: linear-gradient(145deg, #0d274d 0%, #174486 51%, #142844 75%);
+}
+
+.login_initial_button.button{
+    padding: 50px;
+    color: white;
+    background: #ffffff33;
+    border-radius: 10px;
+    border: solid;
+    font-size: large;
+    cursor: pointer;
+}

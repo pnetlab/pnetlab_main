@@ -1,0 +1,20 @@
+global.USER_PERMISSION_TABLE = 'user_permission';
+global.USER_PER_ID = 'user_per_id';
+global.USER_PER_ROLE = 'user_per_role';
+global.USER_PER_NAME = 'user_per_name';
+
+
+global.USER_PER_DEL_FOLDER = 'DELETE_FOLDER';
+global.USER_PER_ADD_FOLDER = 'ADD_FOLDER';
+global.USER_PER_EDIT_FOLDER = 'EDIT_FOLDER';
+global.USER_PER_DEL_LAB = 'DELETE_LAB';
+global.USER_PER_ADD_LAB = 'ADD_LAB';
+global.USER_PER_IMPORT_LAB = 'IMPORT_LAB';
+global.USER_PER_EXPORT_LAB = 'EXPORT_LAB';
+global.USER_PER_MOVE_LAB = 'MOVE_LAB';
+global.USER_PER_CLONE_LAB = 'CLONE_LAB';
+global.USER_PER_RENAME_LAB = 'RENAME_LAB';
+
+global.USER_PER_EDIT_LAB = 'EDIT_LAB';
+global.USER_PER_JOIN_LAB = 'JOIN_LAB';
+global.USER_PER_OPEN_LAB = 'OPEN_LAB';

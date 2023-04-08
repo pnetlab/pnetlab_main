@@ -1,0 +1,29 @@
+@import '@root/assets/css/constants';
+
+@mixin App($padding) {
+	.number_item {
+	    margin: $padding 0px !important;
+	    width: 100%;
+	    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+	    border-radius: 2px;
+	    position: relative;
+	    
+	}
+	
+	
+	.darboard_container{
+		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+		padding: $padding; 
+		border-radius: 5px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+  
+  @include App($padding:15px);
+}
+@media only screen and (max-width: 768px) {
+  
+  @include App($padding:5px);
+  
+}

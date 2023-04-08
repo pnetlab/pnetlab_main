@@ -1,0 +1,12 @@
+global.NOTICE_TABLE = 'notice';
+global.NOTICE_ID = 'notice_id';
+global.NOTICE_TIME = 'notice_time';
+global.NOTICE_UID = 'notice_uid';
+global.NOTICE_UNAME = 'notice_uname';
+global.NOTICE_FIRE_UID = 'notice_fire_uid';
+global.NOTICE_FIRE_UNAME = 'notice_fire_uname';
+global.NOTICE_CONTENT = 'notice_content';
+global.NOTICE_VARIABLE = 'notice_variable';
+global.NOTICE_SEEN = 'notice_seen';
+global.NOTICE_LEVEL = 'notice_level';
+global.NOTICE_ACTION = 'notice_action';

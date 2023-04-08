@@ -1,0 +1,43 @@
+@import '@root/assets/css/constants';
+.group_item {
+		padding: 5px 10px;
+  	    font-size: medium;
+  	    font-weight: bold;
+  	    background: #FF9800;
+  	    border-top-left-radius: 4px;
+  	    border-top-right-radius: 4px;
+  	    margin-right: 2px;
+		position: relative;
+  		border: solid thin $primary_color;
+  	    border-bottom: none;
+	}
+
+	.group_item.selected {
+		background-image: linear-gradient(#FF9800, white);
+	}
+	.group_item.selected::before {
+		content:'';
+		position: absolute;
+		bottom: -3px;
+		left: 0px;
+		right: 0px;
+		background: white;
+		height: 3px;
+	}
+	
+	.group_bar{
+		border-bottom: solid;
+    	border-color: $primary_color;
+	}
+	.new_flag {
+		font-size: 8px;
+	    font-weight: bold;
+	    color: red;
+	    background: rebeccapurple;
+	    position: absolute;
+	    padding: 2px;
+	    border-radius: 3px;
+	    top: -10;
+	    left: -15;
+	    border: solid thin white;
+	}

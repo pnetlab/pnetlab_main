@@ -1,0 +1,28 @@
+@import '@root/assets/css/constants';
+.input_item {
+	display: grid;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+	align-items: center;
+    
+}
+
+.input_item {
+	padding: 5px;
+	width: 100%;
+}
+.input_item:hover .input_item_text{
+	font-weight: bold;
+}
+.input_item_input{
+	padding: 5px;
+	border-radius: 4px;
+	border: solid thin $primary_color;
+	width: 100%;
+	
+}
+.input_item_text{
+	
+}
+			

@@ -1,0 +1,10 @@
+global.UPLOADER_FILES_TABLE = 'uploader_files';
+global.FILE_ID = 'file_id';
+global.FILE_UPLOADER = 'file_uploader';
+global.FILE_DISK = 'file_disk';
+global.FILE_TABLE = 'file_table';
+global.FILE_COLUMN = 'file_column';
+global.FILE_UID = 'file_uid';
+global.FILE_PATH = 'file_path';
+global.FILE_NAME = 'file_name';
+global.FILE_SIZE = 'file_size';

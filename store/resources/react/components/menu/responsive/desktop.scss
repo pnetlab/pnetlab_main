@@ -1,0 +1,102 @@
+@import '@root/assets/css/constants';
+
+.main {
+	padding: 15px;
+}
+
+.menu_frame {
+    bottom: 0px;
+	// color: white;
+    width: $menu_left;
+	z-index: 2000;
+	padding: 5% 0px;
+	float: left; 
+	min-height: 100%;
+	overflow: auto;
+    padding-top: $menu_top;
+    background-color: white;
+    transition: all ease-in-out 0.3s;
+	
+}
+
+.topbar_right {
+	display: flex; 
+	height: $menu_top;
+	margin: auto;
+	color: white;
+	position: fixed;
+	right:0px;
+	top: 0px;
+	left: $menu_left;
+	transition: all ease-in-out 0.3s;
+	background-color: $primary_color;
+	z-index: 2001;
+	
+	.topbar_content {
+		margin: auto 15px auto auto;
+	}
+}
+
+.topbar_left {
+	position: fixed;
+	right:0px;
+	left:0px;
+	top: 0px;
+	width: $menu_left;
+	background-color: $dark_color;
+	margin: auto 0px;
+	height: $menu_top;
+    z-index: 2001;
+	transition: all ease-in-out 0.3s;
+	font-size: x-large;
+    color: white;
+	display: flex;
+	font-weight: bold;
+	
+	&.closed ~ .topbar_right .topbar_button i {
+		transform: rotate(180deg);
+	}
+	
+	
+}
+
+.swal2-container {
+	 z-index: 2060;
+}
+
+.topbar_button {
+	padding: 0px;
+	font-size: 0px;
+	color: $primary_color;
+    display: inline-block;
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
+	margin: auto -16px;
+    background-color: #ffffff;
+    cursor: pointer;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	
+}
+		
+.main {
+	transition: all ease-in-out 0.4s;
+	margin-top: $menu_top;
+	margin-left: $menu_left;
+	
+	&.closed {
+		margin-left: 0px;
+	}
+}
+
+.modal{
+	position:fixed;
+	top:60px;
+	bottom: 0px; 
+	right: 0px;
+}

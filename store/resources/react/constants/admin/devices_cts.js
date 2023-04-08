@@ -1,0 +1,12 @@
+global.DEVICES_TABLE = 'devices';
+global.DEVICE_ID = 'device_id';
+global.DEVICE_NAME = 'device_name';
+global.DEVICE_IMG = 'device_img';
+global.DEVICE_DES = 'device_des';
+global.DEVICE_SCRIPT = 'device_script';
+global.DEVICE_CHECK = 'device_check';
+global.DEVICE_WEIGHT = 'device_weight';
+global.DEVICE_PUBLIC = 'device_public';
+global.DEVICE_COUNT = 'device_count';
+global.DEVICE_TARGET = 'device_target';
+global.DEVICE_DELETE = 'device_delete';

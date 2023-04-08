@@ -1,0 +1,140 @@
+@import '@root/assets/css/constants';
+
+.table{
+	.column_sort[vector="none"]:AFTER {
+		content: "\f0dc";
+		font-family: FontAwesome;
+		margin-left: 4px;
+		opacity: 0.5;
+	}
+	.column_sort[vector="asc"]:AFTER {
+		content: "\f0de";
+		font-family: FontAwesome;
+		margin-left: 4px;
+		
+	}
+	.column_sort[vector="desc"]:AFTER {
+		content: "\f0dd";
+		font-family: FontAwesome;
+		margin-left: 4px;
+		
+	}
+	.column_sort{
+		cursor: pointer;
+	}
+
+	.filter_item .filter_item_input {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+
+	/* Page break */
+	.page_break i {
+		background: #eaeaea;
+		padding: 4px 10px;
+		border-radius: 2px;
+		margin: 0px 2px;
+		line-height: inherit;
+		font-weight: bold;
+		align-self: stretch;
+		display: flex;
+		align-items: center; 
+	}
+
+	.page_break .step {
+		background: #eaeaea;
+		padding: 4px 10px;
+		border-radius: 2px;
+		margin: 0px 2px;
+		line-height: inherit;
+	}
+
+	.page_break .step:active,.page_break i:active {
+		opacity: 0.6;
+	}
+
+	.page_break .step:hover,.page_break i:hover {
+		background: #ffe38f;
+	}
+
+	.page_break {
+		padding: 4px;
+		cursor: pointer;
+	}
+
+	.page_quantity{
+		padding: 5px;
+		width: 50px;
+		border-radius: 2px;
+		border: solid thin darkgray;
+	}
+	/*=============================================*/
+
+	.main_table th, .main_table td {
+		max-width: 300px;
+		vertical-align: middle;
+		padding: 10px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		border-color:#CED1D5;
+	}
+
+	.main_table th{
+		white-space: nowrap;
+		text-align: center;
+		background: #0d274d;
+		color: white;
+	}
+	.main_table tr:hover{
+		box-shadow: 0px 0px 4px $primary_color;
+	}
+
+
+	.modal-body {
+		text-align: initial; 
+		padding: 7px;
+	}
+	.modal-header { 
+		padding: 7px;
+		display: flex;
+		align-items: center;
+	}
+
+	.modal-footer { 
+		padding: 7px;
+	}
+
+	.modal-header .close {
+		padding: 7px;
+		margin: 0px;
+	}
+	.modal-header h4{
+		font-size: 14px !important;
+		font-weight: bold;
+		padding: 5px;
+	}
+	.modal{
+		background: rgba(0, 0, 0, 0.5);
+	}
+	.modal-backdrop{
+		background: unset; 
+	}
+
+	.table_function .button {
+		display: flex;
+		align-items: center;
+		padding: 2px 6px;
+	}
+
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  @import "desktop";
+}
+@media only screen and (max-width: 768px) {
+  @import "mobile"; 
+}

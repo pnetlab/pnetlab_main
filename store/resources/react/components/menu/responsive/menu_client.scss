@@ -1,0 +1,257 @@
+@import '@root/assets/css/constants';
+
+.menu {
+	display: flex;
+	align-items: center;
+	font-size: 0.9rem;
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	z-index: 1000;
+	
+	background: $primary_color;
+	height: $menu_top;
+	color: white;
+}
+
+.main {
+	transition: all ease-in-out 0.4s;
+	padding-top: $menu_top;
+	margin-left: 0px;
+	
+	&.closed {
+		margin-left: 0px;
+	}
+}
+
+.menu_logo {
+	display: none;
+}
+
+.menu_content{
+	display: flex;
+	grid-gap: 10px;
+    grid-auto-flow: column;
+	padding: 0px;
+	margin-bottom: 0px;
+    width: fit-content;
+	width: -moz-fit-content;
+}
+
+.menu_item {
+	display: block;
+	margin: auto;
+	padding: 10px;
+	position: relative;
+	cursor: pointer;
+	white-space: nowrap;
+	
+}
+	.menu_item:ACTIVE {
+		transform: scale(0.99, 0.99);
+	}
+	
+	.menu_item:HOVER {
+		opacity: 0.9;
+		/*border-bottom: solid 2px;*/
+	}
+	.menu_item a {
+		white-space: nowrap;
+	}
+
+.menu_collapse {
+	display: block;
+	margin: auto;
+	padding: 10px;
+	position: relative;
+	cursor: pointer;
+}
+
+.menu_group {
+	position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    min-width: 10rem;
+    margin: .125rem 0 0;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+	transition: all ease-in-out 0.2s;
+	overflow: hidden;
+	
+}
+
+.menu_button, .menu_group_button {
+	cursor: pointer;
+	white-space: nowrap;
+	
+}
+
+.menu_button {
+	display: none;
+	margin: 0px 10px;
+	padding: 10px;
+}
+
+.menu_frame {
+	padding: 0px 20px;
+	align-items: center;
+}
+
+
+.menu_group_button ~ .menu_group {
+	opacity: 0;
+	padding: 0rem 0.5rem;
+	visibility: hidden;
+}
+
+.menu_group_button.expand ~ .menu_group {
+	opacity: 1;
+	padding: 0.5rem;
+	visibility: visible;
+}
+
+.menu_group_button::AFTER {
+	font: normal normal normal 14px/1 FontAwesome;
+	content: " \f0d7";
+}
+
+.menu_cover{ 
+	display: none;
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	background-color: #00000070;
+	z-index: 999;
+}
+
+
+
+
+
+/* Responsive*/
+@media only screen and (min-width: 428px) {
+  
+}
+@media only screen and (max-width: 428px) {
+	
+}
+/* Small devices (portrait tablets and large phones, 768px and down) */
+@media only screen and (min-width: 768px) {
+
+ 
+}
+@media only screen and (max-width: 768px) {
+
+	.menu_expand_lg .menu_button {
+		display: block
+	}
+	
+	.menu_expand_lg .menu_content {
+		display: block;
+		color: white;
+	}
+	
+	.menu_expand_lg .menu_item, .menu_expand_lg .menu_collapse {
+		min-width: 10rem;
+	}
+	
+	.menu_expand_lg .menu_item:last-child {
+		border-bottom: none;
+	}
+	
+	.menu_logo {
+		display: block;
+	}
+	
+	
+	
+	.menu_expand_lg .menu_frame {
+		position: fixed;
+	    top: 0px;
+	    bottom: 0px;
+	    background: #0d274d;
+		color: white;
+	    max-width: 0px;
+	    overflow: hidden;
+		overflow-y: auto;
+		transition: all ease-in-out 0.4s;
+		z-index: 1000;
+		padding: 5% 0px;
+		margin: auto;
+		
+	}
+	
+		.menu_expand_lg .menu_button.expand ~ .menu_frame {
+			max-width: 100%;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		
+		.menu_expand_lg .menu_button.expand ~ .menu_frame ~ .menu_cover {
+			display: block;
+		}
+	
+		
+	.menu_expand_lg .menu_group {
+		position: initial;
+		border: none;
+		background: none;
+		color: inherit;
+	}
+	
+		.menu_expand_lg .menu_group_button ~ .menu_group {
+			max-height: 0px;
+		}
+		
+		.menu_expand_lg .menu_group_button.expand ~ .menu_group {
+			max-height: 100%;
+		}
+		
+		
+	.menu_expand_lg .menu_group_button {
+		display: flex;
+	}
+	
+		.menu_expand_lg .menu_group_button::AFTER {
+			margin: auto 5px auto auto;
+			content: " \f0da";
+		}
+		
+		.menu_expand_lg .menu_group_button.expand::AFTER {
+			margin: auto 5px auto auto;
+			content: " \f0d7";
+		}
+	
+	
+	
+	
+
+
+
+
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+
+
+}
+@media only screen and (max-width: 992px) {
+  
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
+}
+@media only screen and (max-width: 1200px) {
+  
+}
